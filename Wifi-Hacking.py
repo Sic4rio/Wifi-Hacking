@@ -36,7 +36,7 @@ def intro():
 (00)Exit
 -----------------------------------------------------------------------
 """)
-    print("\nEnter your choise here : !# ")
+    print("\nEnter your choice here : !# ")
     var = int(input(""))
     if var == 1 :
         print("\nEnter the interface:(Default(wlan0/wlan1))")
@@ -64,7 +64,7 @@ def intro():
         interface = input("")
         order     = "airodump-ng {} -M".format(interface)
         print("\nWhen Done Press CTRL+c")
-        print("\nNote: Under Probe it might be Passwords So copy them to the worlist file")
+        print("\nNote: Under Probe it might be Passwords So copy them to the wordlist file")
         print("\nDon't Attack The Network if its Data is ZERO (you waste your time)")
         print("\nyou Can use 's' to arrange networks")
         cmd       = os.system("sleep 7")
@@ -76,7 +76,7 @@ def intro():
         print("Enter the path of the output file ?")
         path = str(input(""))
         print("\nEnter the number of the packets [1-10000] ( 0 for unlimited number)")
-        print("the number of the packets Depends on the Distance Between you and the network")
+        print("The number of the packets Depends on the bistance between you and the network")
         dist = int(input(""))
         order = "airodump-ng {} --bssid {} -c {} -w {} | xterm -e aireplay-ng -0 {} -a {} {}".format(interface,bssid,channel,path,dist,bssid,interface)
         geny = os.system(order)
@@ -250,7 +250,7 @@ Feel Free to Contact,
 -----------------------------------------------------------------------------------------
 Crack Password Could Take Hours,Days,Weeks,Months to complete
 and the speed of cracking will reduce because you generate a Huge,Huge Passwordlist
-may reach to Hundreds of TeRa Bits so Be patiant
+may reach to Hundreds of TeRa Bits so Be patient
 """)
         print("\nEnter your choise here : ?")
         set = str(input(""))
@@ -306,7 +306,7 @@ may reach to Hundreds of TeRa Bits so Be patiant
         else:
             print("\nNot Found")
             intro()
-        print("Copy the Password and Close the tool")
+        print("Copy the password and close the tool")
         cmd5 = os.system("sleep 3d")
     elif var == 9 :
         print("\nEnter the minimum length of the password (8/64)?")
